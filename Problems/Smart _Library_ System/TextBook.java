@@ -1,0 +1,13 @@
+package com.gla.Scenario_Based_Problem;
+
+class TextBook extends Book {
+
+    TextBook(int bookId, String title, double price) {
+        super(bookId, title, price);
+    }
+
+    @Override
+    double calculateFine(int daysLate) {
+        return daysLate * 2; // ₹2 per day
+    }
+}
